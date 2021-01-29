@@ -63,7 +63,7 @@
             <a class="nav-link" target=”_blank” href="http://twitter.com/Albasheer313"><img src="{% static 'twitter.png' %}" height="50" /></a>
             <a class="nav-link" target=”_blank” href="https://www.youtube.com/channel/UCLe7oJoSl103K6CE3G_rmBQ"><img src="{% static 'youtube.png' %}" height="50" /></a>
             <a class="nav-link" target=”_blank” href="https://www.instagram.com/albasheer.313/"><img src="{% static 'instagram.png' %}" height="50" /></a>
-            <a class="nav-link" href="{% url 'allblogs' %}"><font size="6">المقالات</font></a>
+            <a class="nav-link" href="{% url 'allblogs' %}"><font size="6">المجالس الحسينية</font></a>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
     <h1 class="text-center pt-3">مركز البشير الإسلامي</h1>
       <br />
       <br />
-      <h2>آخر المقالات</h2>
+      <h2>المجالس الحسينية</h2>
         <hr />
         {% for blog in blogs.all %}
             <a href="{% url 'detail' blog.id %}"><h3>{{blog.title}}</h3></a>
